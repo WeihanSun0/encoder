@@ -1,0 +1,9 @@
+# Ignore all .log files
+*.log
+*.csv
+*.bin
+
+# Ignore all files in the temp directory
+build/
+bin/
+.vscode
