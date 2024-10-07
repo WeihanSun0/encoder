@@ -7,7 +7,7 @@ using namespace std;
 #define DUMMY_DAT 77 //FULLBANK
 #define DUMMY_DAT2 0 //FULLSCAN
 
-const char outfile_raw_dat[] = "raw_dat_10bank.bin";
+const char outfile_raw_dat_10b[] = "raw_dat_10bank.bin";
 const char outfile_raw_dat_43b[] = "raw_dat_43bank.bin";
 const char outfile_ebd[] = "ebd_dat.csv";
 const char outfile_pdc[] = "pdc_dat.csv";

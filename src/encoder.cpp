@@ -162,7 +162,7 @@ bool output_files()
 {
     int i, j, k;
     // raw data of FULLBANK
-    ofstream fs(outfile_raw_dat, ios::binary);
+    ofstream fs(outfile_raw_dat_10b, ios::binary);
     if (fs.is_open()) {
         for (j = 0; j < num_bank; ++j) {
             for (i = 0; i < num_lines_per_bank; ++i) {
@@ -226,9 +226,9 @@ bool output_files()
     }
     fs_intensity.close();
     // raw data of FULLSCAN
-    ofstream fs2(outfile_raw_dat, ios::binary);
+    ofstream fs2(outfile_raw_dat_43b, ios::binary);
     if (fs2.is_open()) {
-        for (j = 0; j < num_bank; ++j) {
+        for (j = 0; j < num_bank2; ++j) {
             for (i = 0; i < num_lines_per_bank; ++i) {
                 for (k = 0; k < bytes_row_per_bank; ++k) {
                     fs2 << raw_dat2[j][i][k];
